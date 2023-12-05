@@ -50,12 +50,3 @@ def get_anime_dict(n):
     anime_info = get_one_anime(n)
     anime_dict = anime_to_dict(anime_info)
     return anime_dict
-
-
-class Base:
-    def __init__(self):
-        self.animes = get_all_anime()
-        self.anime_dicts = many_anime_to_dict(self.animes)
-
-    def get_anime_dict(self, n):
-        return self.anime_dicts[n]
